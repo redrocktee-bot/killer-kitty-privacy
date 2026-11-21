@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy — Killer Kitty Sidekick on The Final Dayz</title>
+<meta name="description" content="What the Killer Kitty Sidekick Discord bot records on The Final Dayz, who can see it, how long it's kept and how to ask for deletion.">
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --accent: #4f5bd5; --line: #d8dee4; --code: #f2f4f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --fg: #e6e8eb; --muted: #9aa4af; --accent: #8c96ff; --line: #2b3038; --code: #1b1f26; }
+  }
+  html { background: var(--bg); }
+  body { margin: 0 auto; max-width: 760px; padding: 32px 16px 64px; color: var(--fg); background: var(--bg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  p.lead, p.meta { color: var(--muted); margin: 4px 0; }
+  ul { padding-left: 22px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  code { background: var(--code); padding: 1px 5px; border-radius: 4px; font-size: .92em; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  footer { margin-top: 40px; color: var(--muted); font-size: .9rem; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<h1>Privacy info — The Final Dayz</h1>
+<p class="lead">What this bot records, who can see it, and how to ask for it to be deleted. This is the same notice players see with <code>/privacyinfo</code> in Discord,
+for anyone who plays on the server without using our Discord.</p>
+<p class="meta">Last updated November 20, 2026</p>
+<section>
+<h2>Where the information comes from</h2>
+<ul>
+  <li><strong>Discord:</strong> your Discord ID and name, the bot commands you use, and what you type into the bot's forms.</li>
+  <li><strong>The game server's log</strong> (from the game host, Nitrado): your <strong>PSN name</strong>, when you join and leave, where you are on the map, kills and deaths (with weapon and distance), emotes, and building. <strong>This is recorded for everyone who plays on the server, even if you never join this Discord or use <code>/register</code>.</strong></li>
+  <li><strong>Staff:</strong> bans and their reasons, base approvals.</li>
+</ul>
+</section>
+<section>
+<h2>What the bot keeps</h2>
+<ul>
+  <li>Your Discord ID linked to your PSN (after <code>/register</code>), and your verification attempts.</li>
+  <li>Game stats by PSN: play time, kills, deaths, longest kill, life length, distance, kill streaks, deaths to zombies, last time seen.</li>
+  <li>Your map positions.</li>
+  <li>Bot money: wallet, bank, and a record of every payment, transfer and casino bet, plus shop orders and where they were delivered.</li>
+  <li>Tickets: the type, subject and dates. What you write in a ticket goes to staff in Discord.</li>
+  <li>Bases: location and the PSN names listed.</li>
+  <li>Factions: name, members and bank history.</li>
+  <li>PvE strikes and bans.</li>
+</ul>
+</section>
+<section>
+<h2>What it doesn't keep</h2>
+<p>The text of your normal Discord messages, your real name, your IP address, or any payment details. Only what you type into the bot's commands and forms is used.</p>
+</section>
+<section>
+<h2>What other people can see</h2>
+<ul>
+  <li><strong>Anyone in this Discord</strong> can look up: your game stats (<code>/stats</code>), your bot money (<code>/balance</code>), which PSN belongs to which Discord member (<code>/whois</code>), who is online right now (<code>/server status</code>), faction members and their PSNs (<code>/faction info</code>), how many PvE strikes a PSN has (<code>/strikes view</code>).</li>
+  <li><strong>Posted in channels:</strong> when you join and leave; the killfeed (kills and deaths, weapon, distance); leaderboards (<code>/top</code>), money transfers and casino results, in the channel where they're used.</li>
+  <li><strong>Staff only:</strong> tickets, bans, strikes and registrations, every build and where it was placed, and flagged builds, shop purchases, where players are and have been (last 7 days).</li>
+  <li><strong>Base alerts:</strong> if a base has alerts on, its owner, members and faction channel are told the PSN of anyone who comes within 150 m.</li>
+</ul>
+</section>
+<section>
+<h2>Messages the bot sends you</h2>
+<p>Direct messages about registration, your starting balance, shop deliveries, base alerts, faction invites, PvE strikes.</p>
+</section>
+<section>
+<h2>Who else handles it</h2>
+<ul>
+  <li><strong>The bot's host</strong> stores its database, and short-term error logs that can include PSN names.</li>
+  <li><strong>Nitrado</strong> (game host) supplies the server log and receives the in-game ban list (PSN names) and shop delivery files.</li>
+  <li><strong>Discord</strong> stores everything the bot posts and sends.</li>
+  <li><strong>Backups:</strong> a copy of the database is saved every night outside the host and kept for 14 days.</li>
+  <li>Nothing is sold or used for advertising.</li>
+</ul>
+</section>
+<section>
+<h2>How long it's kept</h2>
+<ul>
+  <li>Map positions: about 7 days, then deleted automatically.</li>
+  <li><strong>Everything else has no automatic expiry right now</strong>: stats, money and transaction history, shop orders and delivery spots, bases, faction history, strikes, verification attempts and ticket records stay until they're deleted.</li>
+  <li>Messages the bot posted in channels stay until staff delete them.</li>
+  <li>If a feature is switched off, the records it already made are still kept until they're deleted.</li>
+</ul>
+</section>
+<section>
+<h2>Deleting your data</h2>
+<!-- ✏️ PRIVACY EMAIL: replace BOTH "PRIVACY_EMAIL_HERE" in the line below with the privacy email address, then commit. -->
+<p>Ask a staff member by DM, or, if you're not in this Discord or can't use it, at <a href="mailto:PRIVACY_EMAIL_HERE">PRIVACY_EMAIL_HERE</a>. Include your PSN and/or Discord name. Requests are handled by hand by the server owner; you'll be told what was removed and which copies remain.</p>
+</section>
+<footer>Killer Kitty Sidekick is a Discord bot for DayZ servers. It is not made by or affiliated with Bohemia
+Interactive, Nitrado, Sony or Discord.</footer>
+</body>
+</html>

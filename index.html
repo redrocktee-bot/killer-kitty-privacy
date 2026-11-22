@@ -27,7 +27,7 @@
 <h1>Privacy info — The Final Dayz</h1>
 <p class="lead">What this bot records, who can see it, and how to ask for it to be deleted. This is the same notice players see with <code>/privacyinfo</code> in Discord,
 for anyone who plays on the server without using our Discord.</p>
-<p class="meta">Last updated November 20, 2026</p>
+<p class="meta">Last updated November 22, 2026</p>
 <section>
 <h2>Where the information comes from</h2>
 <ul>
@@ -40,12 +40,16 @@ for anyone who plays on the server without using our Discord.</p>
 <h2>What the bot keeps</h2>
 <ul>
   <li>Your Discord ID linked to your PSN (after <code>/register</code>), and your verification attempts.</li>
-  <li>Game stats by PSN: play time, kills, deaths, longest kill, life length, distance, kill streaks, deaths to zombies, last time seen.</li>
+  <li>Game stats by PSN: play time, kills, deaths, longest kill, life length, distance, kill streaks, deaths to zombies, last time seen, and how long you were online each hour (last 14 days, for a daily staff summary).</li>
   <li>Your map positions.</li>
+  <li>Player kills and building from the server log (who, what, where, when), kept 7 days for staff to check reports and ban appeals.</li>
   <li>Bot money: wallet, bank, and a record of every payment, transfer and casino bet, plus shop orders and where they were delivered.</li>
-  <li>Tickets: the type, subject and dates. What you write in a ticket goes to staff in Discord.</li>
+  <li>Tickets: the type, subject and dates, decisions made in the ticket and staff notes (some staff-only). What you write in a ticket goes to staff in Discord.</li>
   <li>Bases: location and the PSN names listed.</li>
   <li>Factions: name, members and bank history.</li>
+  <li>Supply drops: the PSN of the first player to reach each drop.</li>
+  <li>Scavenger hunts: each player's progress by PSN, finishing place and prize.</li>
+  <li>Chicken toss: each throw (distance, angle, power, time) by Discord ID.</li>
   <li>PvE strikes and bans.</li>
 </ul>
 </section>
@@ -57,14 +61,14 @@ for anyone who plays on the server without using our Discord.</p>
 <h2>What other people can see</h2>
 <ul>
   <li><strong>Anyone in this Discord</strong> can look up: your game stats (<code>/stats</code>), your bot money (<code>/balance</code>), which PSN belongs to which Discord member (<code>/whois</code>), who is online right now (<code>/server status</code>), faction members and their PSNs (<code>/faction info</code>), how many PvE strikes a PSN has (<code>/strikes view</code>).</li>
-  <li><strong>Posted in channels:</strong> when you join and leave; the killfeed (kills and deaths, weapon, distance); leaderboards (<code>/top</code>), money transfers and casino results, in the channel where they're used.</li>
-  <li><strong>Staff only:</strong> tickets, bans, strikes and registrations, every build and where it was placed, and flagged builds, shop purchases, where players are and have been (last 7 days).</li>
+  <li><strong>Posted in channels:</strong> when you join and leave; the killfeed (kills and deaths, weapon, distance); the PSN of the first player to reach a supply drop; the PSN of players who finish a scavenger hunt; leaderboards (<code>/top</code>, <code>/chicken top</code>), money transfers and casino and chicken toss results, in the channel where they're used.</li>
+  <li><strong>Staff only:</strong> tickets, bans, strikes and registrations, every build and where it was placed, and flagged builds, shop purchases, where players are and have been (last 7 days), for a player report: the reported player's kills, building and positions around that time.</li>
   <li><strong>Base alerts:</strong> if a base has alerts on, its owner, members and faction channel are told the PSN of anyone who comes within 150 m.</li>
 </ul>
 </section>
 <section>
 <h2>Messages the bot sends you</h2>
-<p>Direct messages about registration, your starting balance, shop deliveries, base alerts, faction invites, PvE strikes.</p>
+<p>Direct messages about registration, your starting balance, shop deliveries, scavenger hunt clues and prizes, base alerts, declined base applications, a summary when your ticket closes (results and staff notes), inactive-base reminders, faction invites, PvE strikes, an automatic ban for building in a protected area.</p>
 </section>
 <section>
 <h2>Who else handles it</h2>
